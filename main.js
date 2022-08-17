@@ -32,6 +32,7 @@ $(document).ready(function(){
     $(".c-pickup__slide").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
+        variableWidth: true,
         infinite: true,
         arrows: true,
         draggable: false,
@@ -41,21 +42,15 @@ $(document).ready(function(){
         nextArrow: "<div class='slick-next slick-arrow'><img src='./assets/arrow-next.svg' alt='icon'></div>",
         responsive: [
             {
-                breakpoint: 1850,
+                breakpoint: 1600,
                 settings: {
                     slidesToShow: 4,
                 },
             },
             {
-                breakpoint: 1560,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 1074,
-                settings: {
-                    slidesToShow: 2,
                 },
             },
             {
